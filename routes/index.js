@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var pg = require('pg');
-var pg_ = new pg.Client('postgres://callmesike:12345@localhost/firstdb');
+var pg_ = new pg.Client('postgres://callmesike:12345@http://139.59.251.245/firstdb');
 
 const connect = ()=>{
 	pg_.connect((err,res)=>{
